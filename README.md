@@ -1,1 +1,1 @@
-# Projeto desenvolvidos ao longo da minha trajetória.
+# Projetos desenvolvidos ao longo da minha trajetória.
