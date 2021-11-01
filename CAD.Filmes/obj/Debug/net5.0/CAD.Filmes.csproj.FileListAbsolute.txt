@@ -1,0 +1,16 @@
+C:\Users\jcarl\CAD.Filmes\bin\Debug\net5.0\CAD.Filmes.exe
+C:\Users\jcarl\CAD.Filmes\bin\Debug\net5.0\CAD.Filmes.deps.json
+C:\Users\jcarl\CAD.Filmes\bin\Debug\net5.0\CAD.Filmes.runtimeconfig.json
+C:\Users\jcarl\CAD.Filmes\bin\Debug\net5.0\CAD.Filmes.runtimeconfig.dev.json
+C:\Users\jcarl\CAD.Filmes\bin\Debug\net5.0\CAD.Filmes.dll
+C:\Users\jcarl\CAD.Filmes\bin\Debug\net5.0\ref\CAD.Filmes.dll
+C:\Users\jcarl\CAD.Filmes\bin\Debug\net5.0\CAD.Filmes.pdb
+C:\Users\jcarl\CAD.Filmes\obj\Debug\net5.0\CAD.Filmes.csproj.AssemblyReference.cache
+C:\Users\jcarl\CAD.Filmes\obj\Debug\net5.0\CAD.Filmes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jcarl\CAD.Filmes\obj\Debug\net5.0\CAD.Filmes.AssemblyInfoInputs.cache
+C:\Users\jcarl\CAD.Filmes\obj\Debug\net5.0\CAD.Filmes.AssemblyInfo.cs
+C:\Users\jcarl\CAD.Filmes\obj\Debug\net5.0\CAD.Filmes.csproj.CoreCompileInputs.cache
+C:\Users\jcarl\CAD.Filmes\obj\Debug\net5.0\CAD.Filmes.dll
+C:\Users\jcarl\CAD.Filmes\obj\Debug\net5.0\ref\CAD.Filmes.dll
+C:\Users\jcarl\CAD.Filmes\obj\Debug\net5.0\CAD.Filmes.pdb
+C:\Users\jcarl\CAD.Filmes\obj\Debug\net5.0\CAD.Filmes.genruntimeconfig.cache
