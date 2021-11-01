@@ -1,1 +1,4 @@
-# Projetos desenvolvidos ao longo da minha trajetória.
+# Projetos:
+
+# BuyTapiocas
+# CAD.Filmes
