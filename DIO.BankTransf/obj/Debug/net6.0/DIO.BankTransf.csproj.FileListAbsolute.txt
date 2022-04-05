@@ -1,0 +1,15 @@
+C:\Users\jcarl\Desktop\DIO-TransferenciaBancaria\DIO.BankTransf\bin\Debug\net6.0\DIO.BankTransf.exe
+C:\Users\jcarl\Desktop\DIO-TransferenciaBancaria\DIO.BankTransf\bin\Debug\net6.0\DIO.BankTransf.deps.json
+C:\Users\jcarl\Desktop\DIO-TransferenciaBancaria\DIO.BankTransf\bin\Debug\net6.0\DIO.BankTransf.runtimeconfig.json
+C:\Users\jcarl\Desktop\DIO-TransferenciaBancaria\DIO.BankTransf\bin\Debug\net6.0\DIO.BankTransf.dll
+C:\Users\jcarl\Desktop\DIO-TransferenciaBancaria\DIO.BankTransf\bin\Debug\net6.0\DIO.BankTransf.pdb
+C:\Users\jcarl\Desktop\DIO-TransferenciaBancaria\DIO.BankTransf\obj\Debug\net6.0\DIO.BankTransf.csproj.AssemblyReference.cache
+C:\Users\jcarl\Desktop\DIO-TransferenciaBancaria\DIO.BankTransf\obj\Debug\net6.0\DIO.BankTransf.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jcarl\Desktop\DIO-TransferenciaBancaria\DIO.BankTransf\obj\Debug\net6.0\DIO.BankTransf.AssemblyInfoInputs.cache
+C:\Users\jcarl\Desktop\DIO-TransferenciaBancaria\DIO.BankTransf\obj\Debug\net6.0\DIO.BankTransf.AssemblyInfo.cs
+C:\Users\jcarl\Desktop\DIO-TransferenciaBancaria\DIO.BankTransf\obj\Debug\net6.0\DIO.BankTransf.csproj.CoreCompileInputs.cache
+C:\Users\jcarl\Desktop\DIO-TransferenciaBancaria\DIO.BankTransf\obj\Debug\net6.0\DIO.BankTransf.dll
+C:\Users\jcarl\Desktop\DIO-TransferenciaBancaria\DIO.BankTransf\obj\Debug\net6.0\refint\DIO.BankTransf.dll
+C:\Users\jcarl\Desktop\DIO-TransferenciaBancaria\DIO.BankTransf\obj\Debug\net6.0\DIO.BankTransf.pdb
+C:\Users\jcarl\Desktop\DIO-TransferenciaBancaria\DIO.BankTransf\obj\Debug\net6.0\DIO.BankTransf.genruntimeconfig.cache
+C:\Users\jcarl\Desktop\DIO-TransferenciaBancaria\DIO.BankTransf\obj\Debug\net6.0\ref\DIO.BankTransf.dll
