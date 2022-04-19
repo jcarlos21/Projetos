@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jcarl\\Desktop\\Projetos\\PooJogoRPG\\PooJogoRPG.csproj",
+      "projectUniqueName": "C:\\Users\\jcarl\\OneDrive\\#Onedrive\\Cursos\\Desenvolvimento\\Projetos\\PooJogoRPG\\PooJogoRPG.csproj",
       "projectName": "PooJogoRPG",
-      "projectPath": "C:\\Users\\jcarl\\Desktop\\Projetos\\PooJogoRPG\\PooJogoRPG.csproj",
+      "projectPath": "C:\\Users\\jcarl\\OneDrive\\#Onedrive\\Cursos\\Desenvolvimento\\Projetos\\PooJogoRPG\\PooJogoRPG.csproj",
       "packagesPath": "C:\\Users\\jcarl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jcarl\\Desktop\\Projetos\\PooJogoRPG\\obj\\",
+      "outputPath": "C:\\Users\\jcarl\\OneDrive\\#Onedrive\\Cursos\\Desenvolvimento\\Projetos\\PooJogoRPG\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages"

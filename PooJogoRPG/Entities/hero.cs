@@ -11,8 +11,12 @@ namespace PooJogoRPG.Entities {
             this.HeroType = heroType;
         }
 
-        // Método construtor sem parâmetros
+        // Método construtor sem parâmetros (construtor vazio)
         public hero() {            
+        }
+
+        public override string ToString(){  // Sobrescrita do método ToString()
+            return this.Name + " " + this.Level + " " + this.HeroType;
         }
     }
 }
