@@ -9,7 +9,6 @@ from DataBase import *
 # root = Tk()
 # root.title("Python: Simple Inventory System")
 
-
 class Login(Tk):
     def __init__(self):
         super().__init__()
@@ -33,7 +32,7 @@ class Login(Tk):
         self.file.add_command(label="Save as")
         self.file.add_separator()
         self.file.add_command(label="Exit", command=self.quit)
-        self.menubar.add_cascade(label="File", menu=self.file, font="Arial 15")
+        self.menubar.add_cascade(label="File", menu=self.file)
 
         self.config(menu=self.menubar)  # Dever vir no final de todos os menus
 
