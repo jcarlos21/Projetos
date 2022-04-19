@@ -18,5 +18,9 @@ namespace PooJogoRPG.Entities {
         public override string ToString(){  // Sobrescrita do método ToString()
             return this.Name + " " + this.Level + " " + this.HeroType;
         }
+
+        public string Attack(){
+            return this.Name + " Atacou com a sua espada.";
+        }
     }
 }

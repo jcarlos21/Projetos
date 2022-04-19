@@ -5,10 +5,13 @@ namespace PooJogoRPG {
     internal class Program {
         static void Main(string[] args) {
 
-            hero Arus = new hero ("Arus", 23, "Knight");
+            hero arus = new hero ("Arus", 23, "Knight");
+            hero oponnent = new hero ("Maleficus", 99, "Devil");
 
-            Console.WriteLine(Arus.ToString());
-            System.Console.WriteLine(Arus);  // Vai imprimir a mesma coisa que a linha anterior.
+            Console.WriteLine(arus.ToString());
+            System.Console.WriteLine(arus);  // Vai imprimir a mesma coisa que a linha anterior.
+
+            System.Console.WriteLine(oponnent);
 
 
             
