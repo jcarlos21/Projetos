@@ -37,7 +37,7 @@ class Login(Tk):
         self.config(menu=self.menubar)  # Dever vir no final de todos os menus
 
     def Label(self):  # O Label trata dos textos na janela
-        self.backGroundImage = PhotoImage(file="background5.png")
+        self.backGroundImage = PhotoImage(file="images/background5.png")
         self.backGroundImageLabel = Label(self, image=self.backGroundImage)
         self.backGroundImageLabel.place(x=0, y=0)
 
