@@ -2,12 +2,11 @@ import platform
 from tkinter import *
 from tkinter import filedialog
 
+import datetime
+
 from PIL import ImageTk
 from DataBase import *
 
-
-# root = Tk()
-# root.title("Python: Simple Inventory System")
 
 class Login(Tk):
     def __init__(self):
@@ -37,7 +36,7 @@ class Login(Tk):
         self.config(menu=self.menubar)  # Dever vir no final de todos os menus
 
     def Label(self):  # O Label trata dos textos na janela
-        self.backGroundImage = PhotoImage(file="images/background5.png")
+        self.backGroundImage = PhotoImage(file="../images/background5.png")
         self.backGroundImageLabel = Label(self, image=self.backGroundImage)
         self.backGroundImageLabel.place(x=0, y=0)
 
@@ -61,6 +60,8 @@ class Login(Tk):
         self.title = Label(self, text="Version 1.0", font="Arial 7", fg="white", background="#000000")
         self.title.place(x=645, y=485)
         # self.wm_attributes('-transparentcolor', '#ab23ff')
+
+        self.dadosHora = datetime.timezone
 
     def Entry(self):
         self.userName = Text(self, borderwidth=0, highlightthickness=0, width=25, height=1)
