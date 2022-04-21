@@ -61,8 +61,6 @@ class Login(Tk):
         self.title.place(x=645, y=485)
         # self.wm_attributes('-transparentcolor', '#ab23ff')
 
-        self.dadosHora = datetime.timezone
-
     def Entry(self):
         self.userName = Text(self, borderwidth=0, highlightthickness=0, width=25, height=1)
         self.userName.place(x=290, y=173)
