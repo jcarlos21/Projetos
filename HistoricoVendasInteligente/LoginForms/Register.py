@@ -1,5 +1,5 @@
 from tkinter import *
-from tkinter.ttk import *
+# from tkinter.ttk import *
 from tkinter import ttk
 from tkinter import filedialog
 
@@ -13,7 +13,7 @@ class RegisterUser(Tk):
     def Label(self):
         self.backGround = PhotoImage(file="../images/background4.png")
         self.backGroundLabel = Label(self, image=self.backGround)
-        self.backGroundLabel.place(x=2, y=2)
+        self.backGroundLabel.place(x=0, y=0)
 
         self.canvas = Canvas(self, width=400, height=350, highlightcolor="blue")
         self.canvas.place(x=150, y=60)  # 700 = 150 + 400 + 150
