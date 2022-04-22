@@ -160,12 +160,13 @@ class Login(RegisterUser):
         self.loginButton["command"] = self.LoginTest
         self.loginButton.place(x=430, y=255)
 
-        self.registerButton = Button(self, text="Register", height=1, bg="white", command=self.RegisterMain, border=0)
+        self.registerButton = Button(self, text="Register", height=1, bg="white", command=self.ScreenRegister, border=0)
         self.registerButton["font"] = ("Arial", "9")
         self.registerButton["width"] = 8
         self.registerButton.place(x=320, y=380)
 
     def LoginTest(self):
+
         print("Deve ser gerado um comando aqui.")
         # Crie uma outra classe para registro
 
@@ -182,6 +183,7 @@ if __name__ == "__main__":
         Login.BarSuperior()
         # Aqui deve existir uma função que retorna verdadeiro se o login deu certo, dai vc para a execução (break)
         Login.mainloop()
+
     # Use um while para executar o código acima. Se o login retornar verdadeiro vc para a execução do while.
 
 # imagem = Image.open("background1.jpg")
