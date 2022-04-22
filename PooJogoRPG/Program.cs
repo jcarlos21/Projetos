@@ -5,9 +5,9 @@ namespace PooJogoRPG {
     internal class Program {
         static void Main(string[] args) {
 
-            Hero arus = new Hero ("Arus", 23, "Knight");
-            Hero oponnent = new Hero ("Maleficus", 99, "Devil");
-            Wizard jennica = new Wizard ("Jennica", 23, "White Wizard");
+            Knight arus = new Knight ("Arus", 23, "Knight", 749, 72);
+            Knight oponnent = new Knight ("Maleficus", 99, "Devil", 749, 72);
+            Wizard jennica = new Wizard ("Jennica", 23, "White Wizard", 601, 482);
 
             Console.WriteLine(arus.ToString());
 

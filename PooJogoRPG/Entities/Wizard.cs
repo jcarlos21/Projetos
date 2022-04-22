@@ -2,10 +2,12 @@ namespace PooJogoRPG.Entities
 {
     public class Wizard : Hero {
 
-        public Wizard(string name, int level, string heroType) {  // Construtor com parâmetros
+        public Wizard(string name, int level, string heroType, int hp, int mp) {  // Construtor com parâmetros
             this.Name = name;
             this.Level = level;
             this.HeroType = heroType;
+            this.HP = hp;
+            this.MP = mp;
         }
 
         public Wizard(){  // Construtor com parâmetros
@@ -16,7 +18,12 @@ namespace PooJogoRPG.Entities
         }
 
         public string Attack(int Bonus){  // Sobrecarga de método (Polimorfismo)
-            return this.Name + $" Lançou Magia com bônus de ataque de {Bonus}.";
+            if (Bonus > 6) {
+                return this.Name + $" Lançou Magia Super Efetiva com bônus de {Bonus}.";
+            }
+            else{
+                return this.Name + $" Lançou Magia com força fraca e bônus de {Bonus}.";
+            }
         }
     }
 }
