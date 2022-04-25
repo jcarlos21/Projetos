@@ -3,8 +3,8 @@ from tkinter import *
 from tkinter import filedialog
 from Register import RegisterUser
 
-from PIL import ImageTk
-from DataBase import *
+# from PIL import ImageTk
+# from DataBase import *
 
 
 class Login(RegisterUser):
