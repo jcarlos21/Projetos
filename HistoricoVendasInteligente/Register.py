@@ -96,7 +96,7 @@ class RegisterUser(Tk):
         self.entryState = Text(self, borderwidth=0, highlightthickness=0, width=35, height=1)
         self.entryState.place(x=250, y=277)
 
-        # Radios:_____________________________________________________________________________________________________
+        # Radios:______________________________________________________________________________________________________
 
         self.escolha = StringVar()
         self.genderMale = Radiobutton(self, text='PrimeiraOp', value="Male", variable=self.escolha)
