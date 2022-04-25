@@ -64,11 +64,8 @@ class RegisterUser(Tk):
         self.title.place(x=645, y=485)
 
         # Buttons:_____________________________________________________________________________________________________
-        # Nickname
-        # Password
-        # Verify Password
 
-        self.buttonExit = Button(text="Exit", font="Arial 9", height=1, bg="white", command=self.quit, border=0)
+        self.buttonExit = Button(text="Exit", font="Arial 9", height=1, bg="white", command=self.destroy, border=0)
         self.buttonExit["width"] = 8
         self.buttonExit["height"] = 1
         self.buttonExit.place(x=555, y=425)
@@ -84,7 +81,7 @@ class RegisterUser(Tk):
         self.entryEmail = Text(self, borderwidth=0, highlightthickness=0, width=35, height=1)
         self.entryEmail.place(x=250, y=117)
 
-        self.entryAddress = Text(self, borderwidth=0, highlightthickness=0, width=35, height=1)  # Somou 30 a y
+        self.entryAddress = Text(self, borderwidth=0, highlightthickness=0, width=35, height=1)
         self.entryAddress.place(x=250, y=187)
 
         self.entryCity = Text(self, borderwidth=0, highlightthickness=0, width=35, height=1)

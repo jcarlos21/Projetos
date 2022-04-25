@@ -93,7 +93,9 @@ class Login(RegisterUser):
         # Crie uma outra classe para registro
 
     def ScreenRegister(self):
-        return self.RegisterMain()
+        # Login.quit()
+        self.RegisterMain()
+
 
 
 if __name__ == "__main__":
