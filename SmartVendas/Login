@@ -1,0 +1,48 @@
+from cProfile import label
+from msilib.schema import LaunchCondition
+from tkinter import *
+from webbrowser import BackgroundBrowser
+from PIL import Image, ImageTk
+from setuptools import Command
+
+class Login:  # O acesso para a área de registro será feito com um link para Register (Aqui deve ser herdada a classe Register)
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Login Window - SmartVendas")
+        self.root.geometry("1100x625+0+0")
+        self.root.resizable(False, False)
+
+        # ============= Imagem de Fundo ==================================
+        self.backGroundImage = PhotoImage(file="images/background8.png")
+        self.backGroundImageLabel = Label(self.root, image=self.backGroundImage).place(x=0, y=0)
+
+        # ============= Frames (ou Containers) de Login ==================
+        frameLogin = Frame(self.root, bg="white")
+        frameLogin.place(x=300, y=72.5, width=700, height=480)
+
+        # ============= Imagem de Cima ===================================
+        self.imageOverBackGround = PhotoImage(file="images/logo.png")
+        self.imageOverBackGroundLabel = Label(self.root, image=self.imageOverBackGround).place(x=150, y=112.5, width=300, height=400)
+
+        # ============= Textos e Entradas da Tela de Login ==========================
+        self.title = Label(frameLogin, text="SIGN IN", font=("times new roman", 25, "bold"), bg="white", fg="#016AFB").place(x=200, y=50)
+
+        self.userNameEmail = Label(frameLogin, text="User Name or E-mail Address", font=("times new roman", 15, "bold"), bg="white", fg="gray").place(x=200, y=120)
+        self.userNameEmailEntry = Entry(frameLogin, font=("times new roman", 15), bg="lightgray").place(x=200, y=150, width=350)
+
+        self.password = Label(frameLogin, text="Password", font=("times new roman", 15, "bold"), bg="white", fg="gray").place(x=200, y=200)
+        self.passwordEntry = Entry(frameLogin, font=("times new roman", 15), bg="lightgray").place(x=200, y=230, width=350)
+
+        self.registerAccount = Button(frameLogin, text="No account? Register here.", font=("times new roman", 10), bg="white", fg="blue", cursor="hand2")
+        self.registerAccount["borderwidth"] = 0
+        self.registerAccount["command"] = self.root.destroy
+        self.registerAccount.place(x=200, y=280)
+
+        self.buttoLoginImage = PhotoImage(file="images/logo.png")
+
+
+root = Tk()
+obj = Login(root)
+
+if __name__ == "__main__":
+    root.mainloop()
