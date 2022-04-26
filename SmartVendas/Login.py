@@ -1,6 +1,5 @@
 from tkinter import *
 from PIL import Image, ImageTk
-from abc import abstractmethod
 # from awesometkinter import *
 # import awesometkinter as atk
 
@@ -58,6 +57,16 @@ class Login:  # O acesso para a área de registro será feito com um link para R
         self.menubar.add_cascade(label="Sobre", menu=self.file2)
 
         self.root.config(menu=self.menubar)
+    
+    def verificaLogin(self):
+        # Verify the veracity of the informations of username and password with the database.
+        # Verifica as informações no banco de dados.
+        pass
+
+    def screenRegistration(self):
+        # It should allow entry on the registration screen.
+        # Permite a entrada no tela de registro
+        self.Register
 
 
 root = Tk()

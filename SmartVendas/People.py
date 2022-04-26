@@ -1,3 +1,6 @@
+from abc import abstractmethod
+# @abstractmethod
+
 class Person:
     def __init__(self, name, gender, dateBirthday, address, zipCode, city, state, country):
         self.name = name
@@ -10,7 +13,7 @@ class Person:
         self.country = country
         
     def insertDatabase(self):
-        # code implementation
+        # code implementation to insert on database
         pass
 
 class Employee (Person):
@@ -19,7 +22,7 @@ class Employee (Person):
         self.enrollment = enrollment
 
     def insertDatabase(self):
-        # code implementation + method insertDatabase of the class Person
+        # code implementation + method insertDatabase of the class Person to insert on database
         pass
 
 class Management (Employee):
@@ -27,7 +30,7 @@ class Management (Employee):
         self.numberCRA = numberCRA
     
     def insertDatabase(self):
-        # code implementation + method insertDatabase of the class Person and Employee
+        # code implementation + method insertDatabase of the class Person and Employee to insert on database
         pass
 
 class Seller (Employee):
@@ -35,5 +38,5 @@ class Seller (Employee):
         self.departament = departament
     
     def insertDatabase(self):
-        # code implementation + method insertDatabase of the class Person and Employee
+        # code implementation + method insertDatabase of the class Person and Employee to insert on database
         pass
