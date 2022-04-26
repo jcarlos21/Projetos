@@ -3,6 +3,8 @@ from tkinter import *
 from tkinter import filedialog
 from Register import RegisterUser
 
+from awesometkinter import *
+
 # from PIL import ImageTk
 # from DataBase import *
 
