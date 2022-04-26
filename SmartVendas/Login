@@ -1,14 +1,15 @@
-from cProfile import label
-from msilib.schema import LaunchCondition
 from tkinter import *
-from webbrowser import BackgroundBrowser
 from PIL import Image, ImageTk
+
+from awesometkinter import *
+import awesometkinter as atk
 
 class Login:  # O acesso para a área de registro será feito com um link para Register (Aqui deve ser herdada a classe Register)
     def __init__(self, root):
         self.root = root
         self.root.title("Login Window - SmartVendas")
-        self.root.geometry("1100x625+0+0")
+        self.root.configure(background="white")
+        self.root.geometry("1100x625")
         self.root.resizable(False, False)
 
         # ============= Imagem de Fundo ==================================
@@ -34,11 +35,11 @@ class Login:  # O acesso para a área de registro será feito com um link para R
 
         self.registerAccountButton = Button(frameLogin, text="No account? Register here.", font=("times new roman", 10), bg="white", fg="blue", cursor="hand2")
         self.registerAccountButton["borderwidth"] = 0
-        self.registerAccountButton["command"] = self.root.destroy
+        self.registerAccountButton["command"] = self.root.quit
         self.registerAccountButton.place(x=200, y=280)
 
-        self.buttoLoginImage = PhotoImage(file="images/logo.png")
-        self.buttonLogin = Button(frameLogin, text="Login", font=("times new roman", 15), bg="green", fg="white", cursor="hand2", width=12, height=1)
+        # self.buttoLoginImage = PhotoImage(file="images/logo.png")
+        self.buttonLogin = Button(frameLogin, text="Login", font=("times new roman", 15), bg="blue", fg="white", cursor="hand2", width=12, height=1)
         self.buttonLogin["command"] = self.root.quit
         self.buttonLogin.place(x=200, y=320)
 
