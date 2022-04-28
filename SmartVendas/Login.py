@@ -59,10 +59,15 @@ class Login:  # O acesso para a área de registro será feito com um link para R
 
         self.root.config(menu=self.menubar)
     
-    def verificaLogin(self):
+    def verificaLogin(self, userName, passaword):
         # Verify the veracity of the informations of username and password with the database.
-        # Verifica as informações no banco de dados.
-        pass
+        # Verifica as informações no banco de dados por meio de um selec. Se o banco não encontrar a informação, será retornado um erro.
+        if userName == "carlosowen75" and passaword == "1234":
+            self.mensagemLogin(True)
+        else:
+            self.mensagemLogin(False)
+
+        # pass
 
     def screenRegistration(self):
         # It should allow entry on the registration screen.
@@ -71,7 +76,7 @@ class Login:  # O acesso para a área de registro será feito com um link para R
     
     # ============= Mensagens de confirmação de Login ================
 
-    def mensagemLogin(self):
+    def mensagemLogin(self, ):
         self.teste = True
         if self.teste:
             messagebox.showinfo("SmartVendas Version 1.0", "Login efetuado com sucesso!")
