@@ -1,6 +1,5 @@
 from tkinter import *
 from tkinter import messagebox
-from turtle import bgcolor
 from PIL import Image, ImageTk
 # from awesometkinter import *
 # import awesometkinter as atk
@@ -73,13 +72,11 @@ class Login:  # O acesso para a área de registro será feito com um link para R
     # ============= Mensagens de confirmação de Login ================
 
     def mensagemLogin(self):
-        self.teste = False
+        self.teste = True
         if self.teste:
             messagebox.showinfo("SmartVendas Version 1.0", "Login efetuado com sucesso!")
         else:
             messagebox.showerror("SmartVendas Version 1.0", "Falha de Login! Usuário ou senha incorretos!")
-        # return messagebox.showinfo("Login efetuado com sucesso!")
-
 
 root = Tk()
 obj = Login(root)
