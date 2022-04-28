@@ -12,7 +12,7 @@ class Login:  # O acesso para a área de registro será feito com um link para R
         self.root.resizable(False, False)
 
         # ============= Imagem de Fundo ==================================
-        self.backGroundImage = PhotoImage(file="images/background8.png")
+        self.backGroundImage = PhotoImage(file="images/background9.png")
         self.backGroundImageLabel = Label(self.root, image=self.backGroundImage).place(x=0, y=0)
 
         # ============= Frames (ou Containers) de Login ==================
@@ -38,11 +38,11 @@ class Login:  # O acesso para a área de registro será feito com um link para R
         self.registerAccountButton.place(x=150, y=260)
 
         # self.buttoLoginImage = PhotoImage(file="images/logo.png")
-        self.buttonLogin = Button(frameLogin, text="Login", font=("times new roman", 11), bg="blue", fg="white", cursor="hand2", width=12, height=1)
+        self.buttonLogin = Button(frameLogin, text="Login", font=("times new roman", 11), bg="red", fg="white", cursor="hand2", width=12, height=1)
         self.buttonLogin["command"] = self.root.quit
         self.buttonLogin.place(x=150, y=310)
 
-        self.title = Label(self.root, text="Version 1.0", font=("times new roman", 9), fg="black", background="#8DD9F0")
+        self.title = Label(self.root, text="Version 1.0", font=("times new roman", 9), fg="black", background="#A9D7FB")
         self.title.place(x=835, y=475)
 
         # ============= Barra de menus ===================================
