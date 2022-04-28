@@ -1,4 +1,6 @@
 from tkinter import *
+from tkinter import messagebox
+from turtle import bgcolor
 from PIL import Image, ImageTk
 # from awesometkinter import *
 # import awesometkinter as atk
@@ -39,7 +41,7 @@ class Login:  # O acesso para a área de registro será feito com um link para R
 
         # self.buttoLoginImage = PhotoImage(file="images/logo.png")
         self.buttonLogin = Button(frameLogin, text="Login", font=("times new roman", 11), bg="red", fg="white", cursor="hand2", width=12, height=1)
-        self.buttonLogin["command"] = self.root.quit
+        self.buttonLogin["command"] = self.mensagemLogin
         self.buttonLogin.place(x=150, y=310)
 
         self.title = Label(self.root, text="Version 1.0", font=("times new roman", 9), fg="black", background="#A9D7FB")
@@ -67,6 +69,16 @@ class Login:  # O acesso para a área de registro será feito com um link para R
         # It should allow entry on the registration screen.
         # Permite a entrada no tela de registro
         self.Register
+    
+    # ============= Mensagens de confirmação de Login ================
+
+    def mensagemLogin(self):
+        self.teste = False
+        if self.teste:
+            messagebox.showinfo("SmartVendas Version 1.0", "Login efetuado com sucesso!")
+        else:
+            messagebox.showerror("SmartVendas Version 1.0", "Falha de Login! Usuário ou senha incorretos!")
+        # return messagebox.showinfo("Login efetuado com sucesso!")
 
 
 root = Tk()
