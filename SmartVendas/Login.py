@@ -10,6 +10,7 @@ class Login:  # O acesso para a área de registro será feito com um link para R
         self.root.title("Login Window - SmartVendas")
         self.root.configure(background="white")
         self.root.geometry("900x500")
+        self.root.iconbitmap("images/venda1.ico")
         self.root.resizable(False, False)
 
         # ============= Imagem de Fundo ==================================
@@ -76,7 +77,7 @@ class Login:  # O acesso para a área de registro será feito com um link para R
     
     # ============= Mensagens de confirmação de Login ================
 
-    def mensagemLogin(self, ):
+    def mensagemLogin(self):
         self.teste = True
         if self.teste:
             messagebox.showinfo("SmartVendas Version 1.0", "Login efetuado com sucesso!")

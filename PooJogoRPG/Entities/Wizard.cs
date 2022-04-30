@@ -10,7 +10,7 @@ namespace PooJogoRPG.Entities
             this.MP = mp;
         }
 
-        public Wizard(){  // Construtor com parâmetros
+        public Wizard(){  // Construtor sem parâmetros
             
         }
         public override string Attack(){  // Uma maneira de polimorfismo

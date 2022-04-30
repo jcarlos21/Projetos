@@ -25,7 +25,7 @@ class Employee (Person):
         # code implementation + method insertDatabase of the class Person to insert on database
         pass
 
-class Management (Employee):
+class Manager (Employee):
     def __init__(self, numberCRA):
         self.numberCRA = numberCRA
     
@@ -40,3 +40,15 @@ class Seller (Employee):
     def insertDatabase(self):
         # code implementation + method insertDatabase of the class Person and Employee to insert on database
         pass
+
+class Customers (Person):
+    def __init__(self, codCustomer):
+        self.codCustomer = codCustomer
+        pass
+
+
+cliente1 = Customers(1)
+cliente1.name = "Carlos"
+cliente1.address = "Rua Mestre Aurino"
+
+print(type(cliente1))
