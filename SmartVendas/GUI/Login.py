@@ -40,7 +40,6 @@ class Login:  # O acesso para a área de registro será feito com um link para R
         self.registerAccountButton["command"] = self.root.quit
         self.registerAccountButton.place(x=150, y=260)
 
-        # self.buttoLoginImage = PhotoImage(file="images/logo.png")
         self.buttonLogin = Button(frameLogin, text="Login", font=("times new roman", 11), bg="red", fg="white", cursor="hand2", width=12, height=1)
         self.buttonLogin["command"] = self.mensagemLogin
         self.buttonLogin.place(x=150, y=310)
