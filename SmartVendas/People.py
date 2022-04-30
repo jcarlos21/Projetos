@@ -40,15 +40,3 @@ class Seller (Employee):
     def insertDatabase(self):
         # code implementation + method insertDatabase of the class Person and Employee to insert on database
         pass
-
-class Customers (Person):
-    def __init__(self, codCustomer):
-        self.codCustomer = codCustomer
-        pass
-
-
-cliente1 = Customers(1)
-cliente1.name = "Carlos"
-cliente1.address = "Rua Mestre Aurino"
-
-print(type(cliente1))
