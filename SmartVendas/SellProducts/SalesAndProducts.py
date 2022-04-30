@@ -1,8 +1,7 @@
 class Product:
-    def __init__(self, codProduct, qtdEstoque, typo):
+    def __init__(self, codProduct, qtdStock):
         self.codProduct = codProduct
-        self.qtdeEstoque = qtdEstoque
-        self.typo = typo
+        self.qtdStock = qtdStock
         pass
 
 
