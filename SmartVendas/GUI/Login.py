@@ -5,6 +5,7 @@ from tkinter import messagebox
 # from awesometkinter import *
 # import awesometkinter as atk
 
+
 class Login:  # O acesso para a área de registro será feito com um link para Register (Aqui deve ser herdada a classe Register)
     def __init__(self, root):
         self.root = root
@@ -15,16 +16,19 @@ class Login:  # O acesso para a área de registro será feito com um link para R
         self.root.resizable(False, False)
 
         # ============= Imagem de Fundo ==================================
-        self.backGroundImage = PhotoImage(file="images/background9.png")
+        self.backGroundImage = PhotoImage(file="images/background8.png")
         self.backGroundImageLabel = Label(self.root, image=self.backGroundImage).place(x=0, y=0)
 
         # ============= Frames (ou Containers) de Login ==================
         frameLogin = Frame(self.root, bg="white")
         frameLogin.place(x=200, y=60, width=600, height=380)
 
+        frameLogo = Frame(self.root, bg="white")
+        frameLogo.place(x=100, y=100, width=200, height=300)
+
         # ============= Imagem de Cima ===================================
-        self.imageOverBackGround = PhotoImage(file="images/logo.png")
-        self.imageOverBackGroundLabel = Label(self.root, image=self.imageOverBackGround).place(x=100, y=100, width=200, height=300)
+        # self.imageLogoBusiness = PhotoImage(file="images/logo.png")
+        # self.imageLogoBusinessLabel = Label(frameLogo, image=self.imageLogoBusiness).place(x=0, y=0, width=200, height=300)
 
         # ============= Textos, botões e entradas da Tela de Login =======
         self.title = Label(frameLogin, text="SIGN IN", font=("times new roman", 20, "bold"), bg="white", fg="#016AFB").place(x=150, y=50)
@@ -39,19 +43,20 @@ class Login:  # O acesso para a área de registro será feito com um link para R
         self.registerAccountButton["borderwidth"] = 0
         self.registerAccountButton["command"] = self.root.quit
         self.registerAccountButton.place(x=150, y=260)
+        # self.registerAccountButton.bind("<Button-1>", ChangeToRegister)  # Alternancia para o RegisterForm
 
         self.buttonLogin = Button(frameLogin, text="Login", font=("times new roman", 11), bg="red", fg="white", cursor="hand2", width=12, height=1)
         self.buttonLogin["command"] = self.mensagemLogin
         self.buttonLogin.place(x=150, y=310)
 
         self.title = Label(self.root, text="Version 1.0", font=("times new roman", 9), fg="black", background="#A9D7FB")
-        self.title.place(x=835, y=475)
+        self.title.place(x=800, y=400)
 
         # ============= Barra de menus ===================================
         self.menubar = Menu(self.root)
         self.file = Menu(self.root, tearoff=False)
         self.file.add_separator()
-        self.file.add_command(label="Exit", command=self.root.quit)
+        self.file.add_command(label="Exit", command=self.exitLogin)
         self.menubar.add_cascade(label="File", menu=self.file)
 
         self.file2 = Menu(self.root, tearoff=False)
@@ -75,7 +80,7 @@ class Login:  # O acesso para a área de registro será feito com um link para R
         # Permite a entrada no tela de registro
         self.Register
     
-    # ============= Mensagens de confirmação de Login ================
+    # ============= Mensagens de confirmação de Login e saída ================
 
     def mensagemLogin(self):
         self.teste = True
@@ -83,6 +88,12 @@ class Login:  # O acesso para a área de registro será feito com um link para R
             messagebox.showinfo("SmartVendas Version 1.0", "Login efetuado com sucesso!")
         else:
             messagebox.showerror("SmartVendas Version 1.0", "Falha de Login! Usuário ou senha incorretos!")
+    
+    def exitLogin(self):
+        self.result = messagebox.askquestion('System', 'Are you sure you want to exit?', icon="warning")
+        if self.result == 'yes':
+            root.destroy()
+            exit()
 
 root = Tk()
 obj = Login(root)
