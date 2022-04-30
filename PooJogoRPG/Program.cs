@@ -11,9 +11,10 @@ namespace PooJogoRPG {
 
             Console.WriteLine(arus.ToString());
 
-            System.Console.WriteLine(arus.Attack());
-            System.Console.WriteLine(oponnent.Attack());
-            System.Console.WriteLine(jennica.Attack(25));
+            Console.WriteLine(arus.Attack());
+            Console.WriteLine(oponnent.Attack());
+            Console.WriteLine(jennica.Attack(25));
+
         }
     }
 }
