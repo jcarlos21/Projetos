@@ -5,12 +5,12 @@ class Person:
     def __init__(self, name, gender, dateBirthday, address, zipCode, city, state, country):
         self.name = name
         self.gender = gender
-        self.dateBirthday = dateBirthday
+        # self.dateBirthday = dateBirthday
         self.address = address
         self.zipCode = zipCode
         self.city = city
         self.state = state
-        self.country = country
+        # self.country = country
     
     def insertDatabase(self):
         # code implementation to insert on database
@@ -26,8 +26,9 @@ class Employee (Person):
         pass
 
 class Manager (Employee):
-    def __init__(self, numberCRA):
-        self.numberCRA = numberCRA
+    def __init__(self, departament):
+        # self.numberCRA = numberCRA
+        self.departament = departament
     
     def insertDatabase(self):
         # code implementation + method insertDatabase of the class Person and Employee to insert on database

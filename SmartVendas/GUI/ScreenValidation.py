@@ -26,13 +26,14 @@ def screenMain():
 
     Label(root, text="Version 1.0", font=("times new roman", 9), fg="white", bg="#8CD8EF").place(x=835, y=460)
 
-    # ==================== Chamada de Métodos ========================
-    
+    # ==================== Chamada de Métodos ========================    
     loginForm(root, ToggleToRegister)
+    # registerForm(root, ToggleToLogin)
 
     # ============= Barra de menus ===================================
     menubar = Menu(root)
     file = Menu(root, tearoff=False)
+    file.add_command(label="Register", command=ToggleToRegister)
     file.add_separator()
     file.add_command(label="Exit", command=exitLogin)
     menubar.add_cascade(label="File", menu=file)
