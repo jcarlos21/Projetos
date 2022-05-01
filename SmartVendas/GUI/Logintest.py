@@ -16,7 +16,7 @@ def loginForm(root, Toggle):
     label.image = photo
 
     # ============= Textos, botões e entradas da Tela de Login =======
-    Label(frameLogin, text="SIGN IN", font=("times new roman", 20, "bold"), bg="white", fg="#016AFB").place(x=150, y=50)
+    Label(frameLogin, text="Sign In", font=("times new roman", 20, "bold"), bg="white", fg="#016AFB").place(x=150, y=50)
 
     Label(frameLogin, text="User Name or E-mail Address", font=("times new roman", 15, "bold"), bg="white", fg="gray").place(x=150, y=120)
     Entry(frameLogin, font=("times new roman", 15), bg="lightgray").place(x=150, y=150, width=350)
