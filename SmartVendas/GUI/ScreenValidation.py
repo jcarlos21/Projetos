@@ -32,11 +32,11 @@ def screenMain():
 
     # ==================== Labels, Frames, Buttons e Logos Complementares =============
 
-    frameLogo = Frame(root)  # Pertence ao Login (Deve ser encerrado quando o registro iniciar)
-    frameLogo.place(x=100, y=100, width=200, height=300)
+    # frameLogo = Frame(root)  # Pertence ao Login (Deve ser encerrado quando o registro iniciar)
+    # frameLogo.place(x=100, y=100, width=200, height=300)
 
-    imageLogoBusiness = PhotoImage(file="images/logo.png")  # Pertence ao Login (Deve ser encerrado quando o registro iniciar)
-    Label(frameLogo, image=imageLogoBusiness).place(x=0, y=0, width=200, height=300)
+    # imageLogoBusiness = PhotoImage(file="images/logo.png")  # Pertence ao Login (Deve ser encerrado quando o registro iniciar)
+    # Label(frameLogo, image=imageLogoBusiness).place(x=0, y=0, width=200, height=300)
 
     # ============= Barra de menus ===================================
     menubar = Menu(root)
@@ -61,7 +61,7 @@ def exitLogin():
         exit()
 
 def ToggleToRegister(event=None):  # Faz a mudança para a tela de Registro
-    frameLogo.destroy()
+    # frameLogo.destroy()
     registerForm(root, ToggleToLogin)
     # Button(root, text="Login", font=("times new roman", 20, "bold"), bg="white", fg="red", borderwidth=0, cursor="hand2", command=ToggleToLogin).place(x=150, y=100)
 

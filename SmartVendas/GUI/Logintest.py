@@ -1,8 +1,8 @@
+from email.mime import image
 from tkinter import *
 from tkinter import messagebox
 from PIL import Image, ImageTk
 
-# root = Tk()
 
 def loginForm(root, Toggle):
 
@@ -10,12 +10,10 @@ def loginForm(root, Toggle):
     frameLogin.place(x=200, y=60, width=600, height=380)
 
     # ============= Logo da empresa ===================================
-    # imageLogoBusiness = PhotoImage(file="images/logo.png")
-    # Label(frameLogo, image=imageLogoBusiness).place(x=0, y=0, width=200, height=300)  # Não funciona a partir daqui
-
-    Label(frameLogin, text="SIGN IN", font=("times new roman", 20, "bold"), bg="white", fg="#016AFB").place(x=150, y=50)
-
-    # Button(frameLogin, text="Registro", font=("times new roman", 20, "bold"), bg="white", fg="blue", borderwidth=0, cursor="hand2", command=Toggle).place(x=150, y=100)
+    photo = PhotoImage(file="images/logo.png")
+    label = Label(root, width=200, height=300, image=photo)
+    label.place(x=100, y=100)
+    label.image = photo
 
     # ============= Textos, botões e entradas da Tela de Login =======
     Label(frameLogin, text="SIGN IN", font=("times new roman", 20, "bold"), bg="white", fg="#016AFB").place(x=150, y=50)
@@ -42,5 +40,3 @@ def mensagemLogin():
             messagebox.showinfo("SmartVendas Version 1.0", "Login efetuado com sucesso!")
         else:
             messagebox.showerror("SmartVendas Version 1.0", "Falha de Login! Usuário ou senha incorretos!")
-
-
