@@ -1,9 +1,16 @@
 from tkinter import *
 from tkinter import messagebox
-from Logintest import loginForm
-from PIL import Image, ImageTk
-from Register import registerForm
+import os, sys
+sys.path.insert(0, os.getcwd())
+# SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+# sys.path.append(os.path.dirname(SCRIPT_DIR))
 
+# from ..InterfaceGraphics import Login
+# from PIL import Image, ImageTk
+# from ..InterfaceGraphics import Register
+
+import InterfaceGraphics.Login as Login
+import InterfaceGraphics.Register as Register
 
 root = Tk()
 
@@ -27,7 +34,7 @@ def screenMain():
     Label(root, text="Version 1.0", font=("times new roman", 9), fg="white", bg="#8CD8EF").place(x=835, y=460)
 
     # ==================== Chamada de Métodos ========================    
-    loginForm(root, ToggleToRegister)
+    Login.loginForm(root, ToggleToRegister)
     # registerForm(root, ToggleToLogin)
 
     # ============= Barra de menus ===================================
@@ -45,7 +52,7 @@ def screenMain():
     root.config(menu=menubar)
 
     # ==================== Janela Principal ========================
-    root.mainloop()
+    root.mainloop()  # Se você tirar essa linha o programa não funcionará
 
 def exitLogin():
     result = messagebox.askquestion('System', 'Are you sure you want to exit?', icon="warning")
@@ -54,7 +61,7 @@ def exitLogin():
         exit()
 
 def ToggleToRegister(event=None):  # Faz a mudança para a tela de Registro
-    registerForm(root, ToggleToLogin)
+    Register.registerForm(root, ToggleToLogin)
 
 def ToggleToLogin(event=None):   # A aplicação reinicia a tela principal após clicar em 'Login'
     screenMain()
