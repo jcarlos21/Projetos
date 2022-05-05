@@ -6,7 +6,7 @@ from Register import registerForm
 
 class ScreenMain:
     def __init__(self, root):
-        # global frameLogin, frameLogo, frameImageRegister
+        # global frameLogin, frameLogo, frameImageRegister  Não precisa desta linha
         self.root = root
         self.root.title("Login Window - SmartVendas")
         self.root.configure(background="blue")
