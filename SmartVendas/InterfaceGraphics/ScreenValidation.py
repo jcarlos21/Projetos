@@ -38,9 +38,8 @@ class ScreenMain:
 
         self.root.config(menu=self.menubar)
 
-        # ==================== Janela Principal ========================
-        # self.root.mainloop()  Não é necessário ter essa linha
-
+    # ==================== Funções Específicas ========================
+        
     def exitLogin(self):
         self.result = messagebox.askquestion('System', 'Are you sure you want to exit?', icon="warning")
         if self.result == 'yes':
