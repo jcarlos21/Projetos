@@ -17,7 +17,7 @@ root = Tk()
 
 def screenMain():
 
-    # global frameLogin, frameLogo, frameImageRegister
+    # global frameLogin, frameLogo, frameImageRegister (Linha não necessária)
 
     root.title("Login Window - SmartVendas")
     root.configure(background="blue")
