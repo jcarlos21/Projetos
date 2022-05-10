@@ -52,7 +52,7 @@ def screenMain():
     root.config(menu=menubar)
 
     # ==================== Janela Principal ========================
-    root.mainloop()  # Se você tirar essa linha o programa não funcionará
+    root.mainloop()  # Se você tirar essa linha o programa não funcionará.
 
 def exitLogin():
     result = messagebox.askquestion('System', 'Are you sure you want to exit?', icon="warning")
