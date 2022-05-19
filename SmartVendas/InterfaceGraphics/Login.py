@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
-from PIL import Image, ImageTk
+# from PIL import Image, ImageTk
 
 
 def loginForm(root, Toggle):
