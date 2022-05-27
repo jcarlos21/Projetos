@@ -18,7 +18,7 @@ class ScreenMain:
         self.backGroundImage = PhotoImage(file="images/background8.png")
         Label(root, image=self.backGroundImage).place(x=0, y=0)
 
-        # Label(root, text="Version 1.0", font=("times new roman", 9), fg="white", bg="#8CD8EF").place(x=835, y=460)
+        # Label(root, text="Version 1.0", font=("times new roman", 9), fg="white", bg="#8CD8EF").place(x=835, y=460) # version
 
         # ==================== Chamada de Métodos ========================    
         loginForm(root, self.ToggleToRegister)
