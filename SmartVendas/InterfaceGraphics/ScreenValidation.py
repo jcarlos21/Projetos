@@ -49,7 +49,7 @@ class ScreenMain:
     def ToggleToRegister(self, event=None):  # Faz a mudança para a tela de Registro
         registerForm(self.root, self.ToggleToLogin)
 
-    def ToggleToLogin(event=None):   # A aplicação reinicia a tela principal após clicar em 'Login'
+    def ToggleToLogin(event=None):   # A aplicação reinicia a tela principal após clicar em 'Login'.
         ScreenMain(root)
         root.mainloop()
 
